@@ -75,7 +75,13 @@ mpl.plot(dates, prices)
 mpl.plot(dates, pricePredict, c='#5aa9ab')
 mpl.plot(dates, pricePredict2, c='#8B008B')
 mpl.show()
-
+'''
+pricePredict2 = mlpr2.predict(dates)
+mpl.plot(dates, prices)
+mpl.plot(dates, pricePredict, c='#5aa9ab')
+mpl.plot(dates, pricePredict2, c='#8B008B')
+mpl.show()
+'''
 layers = [('F', hidden), ('AF', 'tanh'), ('F', hidden), ('AF', 'tanh'), ('F', hidden), ('AF', 'tanh'),('F', hidden), ('AF', 'tanh'), ('F', output)]
 
 '''
